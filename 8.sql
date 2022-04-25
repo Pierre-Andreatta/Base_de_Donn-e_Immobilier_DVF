@@ -1,4 +1,4 @@
-;WITH deux AS (
+WITH deux AS (
 SELECT AVG(mutation.val_fonc/bien.surface_car) AS prix
 FROM mutation
 INNER JOIN Bien ON bien.id = mutation.bien_id
@@ -24,3 +24,5 @@ SELECT
 	AS DECIMAL(10, 2))
 AS "Dif. prix (m²) 2 et 3 pièces"
 FROM deux, trois
+
+;

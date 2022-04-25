@@ -1,4 +1,4 @@
-;WITH dep AS (
+WITH dep AS (
 SELECT commune.code_dep AS departement, COUNT(mutation.id) AS nb_ventes, AVG(mutation.val_fonc/bien.surface_car) AS prix_m
 FROM mutation
 INNER JOIN bien ON bien.id = mutation.bien_id
@@ -33,4 +33,5 @@ LEFT JOIN dep ON dep.departement = ventes.departement
 WHERE ventes.prix>2*dep.prix_m
 GROUP BY ventes.departement
 ORDER BY Taux DESC
- 
+
+; 

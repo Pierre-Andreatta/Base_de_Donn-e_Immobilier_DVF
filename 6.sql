@@ -1,4 +1,4 @@
-;WITH janv AS (
+WITH janv AS (
 	SELECT COUNT(mutation.id) AS compte
   	FROM mutation     
     WHERE mutation.date BETWEEN '2020-01-01' AND '2020-03-31'
@@ -17,4 +17,6 @@ AS DECIMAL(10, 2)
 AS "Taux d'évolution"
 
 FROM janv, avril
+
+;
 

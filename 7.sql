@@ -1,4 +1,4 @@
-;WITH janv AS (
+WITH janv AS (
 	SELECT commune.nom AS commune, 
 	COUNT(mutation.id) AS compte
   	FROM mutation     
@@ -32,3 +32,4 @@ AS DECIMAL(10, 2)) > 20
 
 ORDER BY "Taux d'évolution" DESC
 
+;

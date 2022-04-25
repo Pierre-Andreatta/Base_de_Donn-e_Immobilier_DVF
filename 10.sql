@@ -8,3 +8,5 @@ GROUP BY commune.nom, commune.cp
 ORDER BY "Valeur foncière moyenne" DESC
 
 LIMIT 20
+
+;
